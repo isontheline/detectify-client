@@ -11,7 +11,7 @@ An unofficial but powerful JAVA client for Detectify API : Go hack yourself!
 # Usage
 ## Initializing the report client
 ```
-// SECRET_KEY must be an empty string if your don't have received it from your Detectify account :
+// SECRET_KEY must be an empty string if you don't have received it from your Detectify account :
 DetectifyReportClient reportClient = new DetectifyReportClient(API_KEY, SECRET_KEY);
 ```
 
