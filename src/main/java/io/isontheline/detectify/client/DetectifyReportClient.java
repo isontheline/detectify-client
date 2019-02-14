@@ -1,4 +1,5 @@
 package io.isontheline.detectify.client;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.isontheline.detectify.dto.DetectifyReport;

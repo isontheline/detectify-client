@@ -1,4 +1,5 @@
 package io.isontheline.detectify.client;
+
 import java.util.ArrayList;
 
 import com.fasterxml.jackson.core.type.TypeReference;

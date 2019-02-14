@@ -1,8 +1,4 @@
 package io.isontheline.detectify.client;
-import javax.crypto.Mac;
-import javax.crypto.spec.SecretKeySpec;
-
-import io.isontheline.detectify.response.DetectifyAPIResponse;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,6 +11,12 @@ import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+
+import io.isontheline.detectify.client.DetectifyProfileClient;
+import io.isontheline.detectify.response.DetectifyAPIResponse;
 
 public class DetectifyCoreClient {
     /**
