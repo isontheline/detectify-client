@@ -9,13 +9,19 @@ An unofficial but powerful JAVA client for Detectify API : Go hack yourself!
 [Learn more about Detectify](https://detectify.com)
 
 # Usage
-## Initializing the report client
+## Retrieving last report of the specified scan profile :
 ```
 // SECRET_KEY must be an empty string if you don't have received it from your Detectify account :
 DetectifyReportClient reportClient = new DetectifyReportClient(API_KEY, SECRET_KEY);
+	
+DetectifyReport lastReport = reportClient.getLastReportFor(SCAN_PROFILE_TOKEN);
+Double cvss = lastReport.getCvss();
 ```
 
-## Retrieving last report of the specified scan profile :
-```		
-DetectifyReport lastReport = reportClient.getLastReportFor(SCAN_PROFILE_TOKEN);
+## Retrieving all domains :
+```
+// SECRET_KEY must be an empty string if you don't have received it from your Detectify account :
+DetectifyDomainClient domainClient = new DetectifyDomainClient(API_KEY, SECRET_KEY);
+
+ArrayList<DetectifyDomain> domainClient = domainClient.listDomains();
 ```
