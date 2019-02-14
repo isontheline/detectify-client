@@ -14,6 +14,11 @@ public class DetectifyDomainClientTest {
 		String apiKey = System.getProperty("apiKey");
 		String secretKey = System.getProperty("secretKey");
 		
+		// Skip tests if we don't have API key
+		if(apiKey == null && secretKey == null) {
+			return;
+		}
+		
 		DetectifyDomainClient ddc = new DetectifyDomainClient(apiKey, secretKey);
 		ArrayList<DetectifyDomain> domainsList = ddc.listDomains();
 		

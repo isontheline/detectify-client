@@ -13,6 +13,11 @@ public class DetectifyReportClientTest {
 		String secretKey = System.getProperty("secretKey");
 		String scanProfileToken = System.getProperty("scanProfileToken");
 		
+		// Skip tests if we don't have API key
+		if(apiKey == null && secretKey == null) {
+			return;
+		}
+		
 		DetectifyReportClient drc = new DetectifyReportClient(apiKey, secretKey);
 		DetectifyReport report = drc.getLastReportFor(scanProfileToken);
 		
