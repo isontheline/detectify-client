@@ -123,8 +123,17 @@ public class DetectifyReport {
 		return informationFindings;
 	}
 
-	@JsonProperty("infomration_findings")
+	@JsonProperty("information_findings")
 	public void setInformationFindings(Integer informationFindings) {
 		this.informationFindings = informationFindings;
+	}
+
+	@Override
+	public String toString() {
+		return "DetectifyReport [token=" + token + ", scanProfileToken=" + scanProfileToken + ", scanProfileName="
+				+ scanProfileName + ", created=" + created + ", started=" + started + ", stopped=" + stopped + ", url="
+				+ url + ", cvss=" + cvss + ", highLevelFindings=" + highLevelFindings + ", mediumLevelFindings="
+				+ mediumLevelFindings + ", lowLevelFindings=" + lowLevelFindings + ", informationFindings="
+				+ informationFindings + "]";
 	}
 }

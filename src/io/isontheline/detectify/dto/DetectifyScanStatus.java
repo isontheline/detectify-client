@@ -45,4 +45,10 @@ public class DetectifyScanStatus {
 	public void setState(String state) {
 		this.state = state;
 	}
+
+	@Override
+	public String toString() {
+		return "DetectifyScanStatus [scanProfileToken=" + scanProfileToken + ", created=" + created + ", phase=" + phase
+				+ ", state=" + state + "]";
+	}
 }

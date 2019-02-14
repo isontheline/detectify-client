@@ -17,8 +17,6 @@ public class DetectifyProfileClient extends DetectifyCoreClient {
     	String path = String.format("/scans/%s/", scanProfile);
     	
     	DetectifyAPIResponse apiResponse = this.getAPIResponseFrom("POST", path);
-    	
-    	System.out.println(apiResponse.getResponse());
     }
 
     public DetectifyScanStatus getScanStatus(String scanProfile) {

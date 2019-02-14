@@ -5,12 +5,12 @@ import java.sql.Timestamp;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DetectifyProfile {
+public class DetectifyDomain {
 	private String name;
-	private String endpoint;
 	private String status;
 	private Timestamp created;
 	private String token;
+	private Boolean monitored;
 	
 	public String getName() {
 		return name;
@@ -18,14 +18,6 @@ public class DetectifyProfile {
 	
 	public void setName(String name) {
 		this.name = name;
-	}
-	
-	public String getEndpoint() {
-		return endpoint;
-	}
-	
-	public void setEndpoint(String endpoint) {
-		this.endpoint = endpoint;
 	}
 	
 	public String getStatus() {
@@ -52,9 +44,17 @@ public class DetectifyProfile {
 		this.token = token;
 	}
 
+	public Boolean getMonitored() {
+		return monitored;
+	}
+
+	public void setMonitored(Boolean monitored) {
+		this.monitored = monitored;
+	}
+
 	@Override
 	public String toString() {
-		return "DetectifyProfile [name=" + name + ", endpoint=" + endpoint + ", status=" + status + ", created="
-				+ created + ", token=" + token + "]";
+		return "DetectifyDomain [name=" + name + ", status=" + status + ", created=" + created + ", token=" + token
+				+ ", monitored=" + monitored + "]";
 	}
 }
