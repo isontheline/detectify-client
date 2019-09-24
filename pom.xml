@@ -28,4 +28,12 @@
 	    <version>4.12</version>
 	</dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+        <id>github</id>
+        <name>GitHub isontheline Apache Maven Packages</name>
+        <url>https://maven.pkg.github.com/isontheline/detectify-client</url>
+    </repository>
+  </distributionManagement>
 </project>
