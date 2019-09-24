@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.com/isontheline/detectify-client.svg?branch=master)](https://travis-ci.com/isontheline/detectify-client)
-
 # About detectify-client
 An unofficial but powerful JAVA client for Detectify API : Go hack yourself!
 
@@ -13,7 +11,7 @@ An unofficial but powerful JAVA client for Detectify API : Go hack yourself!
 ```
 // SECRET_KEY must be an empty string if you don't have received it from your Detectify account :
 DetectifyReportClient reportClient = new DetectifyReportClient(API_KEY, SECRET_KEY);
-	
+
 DetectifyReport lastReport = reportClient.getLastReportFor(SCAN_PROFILE_TOKEN);
 Double cvss = lastReport.getCvss();
 ```
